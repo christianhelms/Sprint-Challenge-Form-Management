@@ -13,10 +13,10 @@ const Register = (props) => {
         onSubmit={(values, actions) => {
             console.log(values);
             actions.setSubmitting(true);
-            axios.post('http://localhost:6000/api/register', values)
+            axios.post('http://localhost:5000/api/register', values)
             .then(res => {
-                    localStorage.setItem('token', res.data.payload)
-                    console.log(props)
+                    localStorage.setItem('token', res.data.token)
+                    console.log(res)
                 })
             .then(()=> props.history.push('/privatedata'))
             .catch(err => console.log(err))

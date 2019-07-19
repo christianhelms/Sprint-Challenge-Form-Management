@@ -6,7 +6,7 @@ const DataList = (props) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axiosWithAuth().get('http://localhost:6000/api/restricted/data')
+        axiosWithAuth().get('/restricted/data')
             .then(res => setData(res.data))
             .catch(err => console.log(err))
     }, [])
@@ -15,7 +15,7 @@ const DataList = (props) => {
 
             {data.map(data => {
                 return (
-                <div className="friend">
+                <div className="dishes">
                     {data.name}
                     {data.course}
                     {data.technique}
