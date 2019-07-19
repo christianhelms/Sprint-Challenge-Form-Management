@@ -25,14 +25,19 @@ In the challenge for this Sprint, you will demonstrate proficiency by creating a
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why are forms used so often in web applications and software?
+A: It's used for interaction with a website. They're used in nearly every website unless it's a static website and even then, it's common for a static website to have a "contact us" form.
 
 - [ ] What advantages are there by using a forms library like Formik?
+A: It speeds up the process and makes it much simpler to actually create the form, link it to the backend/server and get it functioning correctly.
 
 - [ ] What is stateful logic?
+Stateful logic refers to a form of computational logic in which the same devices both store logic values and perform logical operations.
 
 - [ ] What is a custom hook, and what does it mean to compose hooks together?
+A custom hook is a hook that is created by the user in a stand alone file. That file is then used in place of a default hook in a new file that's incorporating that hook.
 
 - [ ] Describe the process of retriving a token from a server and using that token in subsequent API calls.
+You would setup a request on a form like a login when the submit button is pressed to validate the credentials and then send a token back which would then allow the person to enter the website.
 
 ## Project Set Up
 
